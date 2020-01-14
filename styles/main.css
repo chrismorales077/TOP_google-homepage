@@ -1,5 +1,8 @@
+body    {
+    margin: 0;
+}
 nav {
-    background-color: red;
+    margin: 0 25px 0 25px;
 }
 nav ul  {
     list-style-type: none;
@@ -9,14 +12,78 @@ nav ul  {
 }
 nav li  {
     float: left;
+    padding: 25px 10px;
 }
 nav li a    {
     display: block;
-    padding: 5px 10px;
     text-decoration: none;
+    color: black;
+}
+nav li a:hover  {
+    text-decoration: underline;
 }
 .nav-right  {
     float: right;
 }
-
-
+#logo, #search-bar, #buttons   {
+    text-align: center;
+}
+#logo   {
+    margin-top: 100px;
+}
+img {
+    width: 350px;
+}
+#search-bar {
+    margin-top: 30px;
+    padding: 10px;
+}
+#search-bar input {
+    width: 550px;
+    height: 40px;
+    border-radius: 25px;
+    border: 2px solid rgb(110, 110, 110);
+}
+#buttons    {
+    margin-top: 30px;
+}
+button {
+    width: 150px;
+    height: 50px;
+    font-size: 17px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: none;
+}
+button:nth-of-type(2)   {
+    width: 160px;
+}
+button:hover    {
+    border: 1px solid black;
+}
+footer {
+    background-color: rgb(202, 202, 202);
+    border-top: 1px solid rgb(110, 110, 110);
+    margin-top: 180px;
+}
+footer ul  {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+footer li  {
+    float: left;
+    padding: 15px 15px;
+}
+footer li a    {
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+footer li a:hover   {
+    text-decoration: underline;
+}
+.footer-right   {
+    float: right;
+}
