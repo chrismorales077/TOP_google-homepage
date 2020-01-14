@@ -1,0 +1,22 @@
+nav {
+    background-color: red;
+}
+nav ul  {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+nav li  {
+    float: left;
+}
+nav li a    {
+    display: block;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+.nav-right  {
+    float: right;
+}
+
+
