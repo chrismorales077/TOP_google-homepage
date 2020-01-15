@@ -1,6 +1,9 @@
 body    {
     margin: 0;
 }
+
+/* NAVBAR */
+
 nav {
     margin: 0 25px 0 25px;
 }
@@ -25,6 +28,9 @@ nav li a:hover  {
 .nav-right  {
     float: right;
 }
+
+/* MAIN */
+
 #logo, #search-bar, #buttons   {
     text-align: center;
 }
@@ -39,10 +45,18 @@ img {
     padding: 10px;
 }
 #search-bar input {
-    width: 550px;
+    width: 80%;
+    max-width: 550px;
     height: 40px;
     border-radius: 25px;
     border: 2px solid rgb(110, 110, 110);
+    font-size: 20px;
+}
+#search-bar input[type="text"] {
+    padding-left: 15px;
+}
+#search-bar input:focus {
+    outline: none;
 }
 #buttons    {
     margin-top: 30px;
@@ -61,6 +75,9 @@ button:nth-of-type(2)   {
 button:hover    {
     border: 1px solid black;
 }
+
+/* FOOTER */
+
 footer {
     background-color: rgb(202, 202, 202);
     border-top: 1px solid rgb(110, 110, 110);
@@ -86,4 +103,66 @@ footer li a:hover   {
 }
 .footer-right   {
     float: right;
+}
+
+/* MEDIA QUERIES */
+
+@media  only screen and (max-width: 425px)  {
+    
+    img {
+        width: 250px;
+    }
+    footer ul .footer-top {
+        margin-left: 20px;
+    }
+    footer ul .footer-bottom {
+        float: left;
+        margin-left: 35px;
+        padding-top: 0px;
+    }
+    footer ul li:nth-of-type(6) {
+        margin-left: 60px;
+    }
+}
+@media  only screen and (max-width: 375px) {
+    #search-bar, #buttons   {
+        margin-top: 10px;
+    }
+    button {
+        width: 115px;
+        font-size: 15px;
+        padding: 5px;
+    }
+    button:nth-of-type(2) {
+        padding: 5px;
+        width: 130px;
+    }
+    footer ul .footer-top   {
+        margin-left: 20px;
+        padding: 5px;
+    }
+    footer ul .footer-bottom {
+        padding: 5px;
+    }
+}
+@media  only screen and (max-width: 320px) {
+    nav {
+        margin-left: 15px;
+    }
+    nav ul li {
+        padding: 5px;
+        margin: 1px;
+    }
+    #buttons {
+        padding-left: 15px;
+    }
+    footer ul .footer-top   {
+        margin: 5px;
+    }
+    footer ul .footer-bottom {
+        margin-left: 20px;
+    }
+    footer ul li:nth-of-type(5) {
+        margin-left: 30px;
+    }
 }
